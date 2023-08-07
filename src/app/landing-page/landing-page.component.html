@@ -1,0 +1,17 @@
+<mat-toolbar id="toolbar">
+    <img src="/assets/icons/salad.png" alt="salad" />
+    <span id="toolbarSpan">What to eat</span>
+</mat-toolbar>
+
+<div id="wrapper">
+    <div id="randomMeal">
+        <h2>Bored with pizza? No idea for dinner again? </h2>
+        <h4><a routerLink="">Here</a> you can find a lot of delicious food! <fa-icon [icon]="faLemon" id="lemonIcon"></fa-icon> </h4>
+        <div id="buttonDiv">
+            <button mat-button (click)="openDialog()" id="randomButton">Get random meal</button>
+        </div>
+    </div>
+    <div id="pizzaDiv">
+        <img src="/assets/icons/pizza.jpg" alt="pizza" id="pizzaImage" />
+    </div>
+</div>

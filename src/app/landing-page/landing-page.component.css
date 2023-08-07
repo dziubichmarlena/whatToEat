@@ -1,0 +1,53 @@
+#toolbar{
+    background-color:white;
+    height: 10%;
+    display: flex;
+    box-shadow: 0 8px 6px -4px rgb(208, 208, 208);
+}
+
+#toolbarSpan{
+    font-size: larger;
+    font-weight: bold;
+}
+
+#wrapper{
+    height: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.header{
+    margin-left: 10px;
+}
+
+
+#randomButton{
+    background-color: #C70039;
+    color: white;
+    font-weight: bold;
+}
+
+#pizzaImage{
+    width: 770px;
+    height: 678px;
+}
+
+#pizzaDiv{
+   display: flex;
+   height: 100%;
+}
+
+#randomMeal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, h3{
+    margin: 0;
+}
+
+#lemonIcon{
+    color: #FFC300;
+}
