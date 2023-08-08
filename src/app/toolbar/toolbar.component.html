@@ -1,0 +1,8 @@
+<mat-toolbar id="toolbar">
+    <img src="/assets/icons/salad.png" alt="salad" (click)="navigateToHome()" id="whiteSalad" />
+    <span id="toolbarSpan">What to eat</span>
+    <div id="toolbarButton">
+        <button mat-button class="randomButton" (click)="openDialog()">Random meal</button>
+    </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

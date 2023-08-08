@@ -2,3 +2,9 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+mat-tooltip-component .mdc-tooltip__surface {
+    width: 300px !important;
+    max-width: unset !important;
+}

@@ -1,0 +1,28 @@
+#toolbar{
+    background-color: white;
+    height: 11%;
+    display: flex;
+    box-shadow: 0 8px 6px -4px rgb(208, 208, 208);
+}
+
+#toolbarSpan{
+    font-size: larger;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#toolbarButton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.randomButton{
+    background-color: #C70039;
+    color:  white !important;
+    font-weight: bold;
+}
+
+#whiteSalad:hover{
+    cursor: pointer;
+}

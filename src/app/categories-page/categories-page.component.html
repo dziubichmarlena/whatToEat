@@ -1,0 +1,17 @@
+<div id="wrapper">
+    <div id="categoriesDiv">
+        <img src="/assets/icons/categories.jpg" alt="pizza" id="categoriesImage" />
+    </div>
+    <div id="categories">
+        <h3>What do you want to eat?</h3>
+        <div *ngFor="let category of mealsService.categories$ | async">
+            <div class="category">
+                <a class="routerLink" routerLink="{{category.strCategory}}"
+                    matTooltip="We have {{category._length}} meal(s) in this category"
+                    [matTooltipPosition]="'after'">{{category.strCategory}}
+                    <span *ngIf="category.strCategory === 'Vegan' || category.strCategory === 'Vegetarian'"><fa-icon
+                            [icon]="faSeedling" class="leafIcon"></fa-icon></span></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,14 +1,18 @@
 <mat-toolbar id="toolbar">
     <img src="/assets/icons/salad.png" alt="salad" />
     <span id="toolbarSpan">What to eat</span>
+    <div id="toolbarButton">
+        <!-- <button mat-button id="categoryButton">See all</button> -->
+        <button mat-button class="randomButton" (click)="navigateToCategories()">Meal categories</button>
+    </div>
 </mat-toolbar>
 
 <div id="wrapper">
     <div id="randomMeal">
-        <h2>Bored with pizza? No idea for dinner again? </h2>
-        <h4><a routerLink="">Here</a> you can find a lot of delicious food! <fa-icon [icon]="faLemon" id="lemonIcon"></fa-icon> </h4>
+        <h2>Bored with pizza? Nothing to eat? </h2>
+        <h4><a routerLink="">Here</a> you can find only delicous food <fa-icon [icon]="faLemon" id="lemonIcon"></fa-icon> </h4>
         <div id="buttonDiv">
-            <button mat-button (click)="openDialog()" id="randomButton">Get random meal</button>
+            <button mat-button (click)="openDialog()" class="randomButton">Still don't know? Get a random meal</button>
         </div>
     </div>
     <div id="pizzaDiv">

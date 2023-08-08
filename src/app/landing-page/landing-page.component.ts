@@ -3,6 +3,7 @@ import { faLemon } from '@fortawesome/free-solid-svg-icons';
 import { MealsService } from '../services/meals.service';
 import { MatDialog } from '@angular/material/dialog';
 import { RandomMealComponent } from '../random-meal/random-meal.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -11,22 +12,19 @@ import { RandomMealComponent } from '../random-meal/random-meal.component';
 })
 export class LandingPageComponent{
   faLemon = faLemon;
-  constructor(private readonly mealsService: MealsService,  public dialog: MatDialog){}
+  constructor(private readonly mealsService: MealsService,  public dialog: MatDialog, private router: Router){}
 
  
   openDialog() {
-    const timeout = 1500;
       const dialogRef = this.dialog.open(RandomMealComponent, {
-        width: '350px',
-        height: '100px',
+        width: '400px',
+        height: '200px',
         data: {}
       });
+  }
 
-      // dialogRef.afterOpened().subscribe(_ => {
-      //   setTimeout(() => {
-      //     dialogRef.close();
-      //   }, timeout)
-      // })
+  navigateToCategories(){
+    this.router.navigate(['categories']);
   }
 
 }

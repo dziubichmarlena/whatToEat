@@ -1,4 +1,5 @@
-<span>Selected for you</span>
-<p *ngIf="kitchen">{{kitchen.meals[0].strMeal}}</p>
-<a routerLink="">Get the recipe</a>
-<button (click)="generateAnother()">Generate another one!</button>
+<div id="wrapper">
+    <p id="kitchenParagraph" *ngIf="kitchen"><b>{{kitchen.meals[0].strMeal}}</b> is selected for you</p>
+    <p id="recipeParagraph">Interested? <a routerLink="" id="recipeLink">Get the recipe</a></p>
+    <button mat-button (click)="generateAnother()" id="dialogButton">Generate a different one</button>
+</div>

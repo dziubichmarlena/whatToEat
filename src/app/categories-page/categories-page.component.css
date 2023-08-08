@@ -1,0 +1,34 @@
+#wrapper{
+    height: 89%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#categoriesImage{
+    width: 850px;
+    height: 100%;
+}
+
+#categoriesDiv{
+    display: flex;
+}
+
+#categories{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-left: 5rem;
+}
+
+.leafIcon{
+    color: green;
+}
+
+.category{
+    padding-top: 10px;
+}
+
+.routerLink{
+    text-decoration: none;
+    color: black;
+}
