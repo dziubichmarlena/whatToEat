@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit} from '@angular/core';
-import { Kitchen, MealsService } from '../services/meals.service';
+import { MealDBResponse, MealsService } from '../services/meals.service';
 
 
 @Component({
@@ -9,14 +9,14 @@ import { Kitchen, MealsService } from '../services/meals.service';
 })
 export class RandomMealComponent implements OnInit {
 
- kitchen: Kitchen | any;
+ mealDBresponse: MealDBResponse | any;
 
   constructor(private readonly mealsService: MealsService){}
  async ngOnInit() {
-    this.kitchen = await this.mealsService.getRandomMeal();
+    this.mealDBresponse = await this.mealsService.getRandomMeal();
   }
 
   async generateAnother(){
-    this.kitchen = await this.mealsService.getRandomMeal();
+    this.mealDBresponse = await this.mealsService.getRandomMeal();
   }
 }

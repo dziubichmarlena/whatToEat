@@ -62,3 +62,8 @@ h2, h3{
 #lemonIcon{
     color: #FFC300;
 }
+
+#navigateToCategories{
+    text-decoration: none;
+    color: #b10032;
+}

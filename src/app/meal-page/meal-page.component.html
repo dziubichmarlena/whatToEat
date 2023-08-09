@@ -1,0 +1,23 @@
+<div id="wrapper" *ngIf="meal">
+    <div id="meal">
+      <img src="{{meal.strMealThumb}}" [alt]="meal.idMeal" id="mealImage"/>
+    </div>
+    <div id="recipe">
+        <h3 style="margin-bottom: 3px;">{{meal.strMeal}}</h3>
+        <p>Cusine: &nbsp;{{meal.strArea}}</p>
+        <p>Category: &nbsp;{{meal.strCategory | lowercase}}</p>
+        <br>
+        <p><b>Ingredients and measurements</b></p>
+        <div *ngFor="let im of map | keyvalue">
+            • {{im.key}} ({{im.value}})
+        </div>
+        <p><b>Instructions</b></p>
+        <div id="instructions">
+            {{meal.strInstructions}}
+        </div>
+        <br>
+        <span *ngFor="let tag of tags">
+            <span>#{{tag| lowercase}}&nbsp;</span>
+        </span>
+    </div>
+</div>

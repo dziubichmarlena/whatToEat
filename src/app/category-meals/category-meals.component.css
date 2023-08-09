@@ -1,0 +1,64 @@
+#wrapper{
+    height: 89%;
+    display: flex;
+    justify-content: center;
+}
+
+.randomButton{
+    background-color: #C70039;
+    color: white !important;
+    font-weight: bold;
+}
+
+.randomButton:hover{
+    background-color: #b10032;
+}
+
+#toolbarButton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#table{
+    margin-top: 30px;
+    width: 700px;
+
+}
+
+.mealImage{
+    width: 100px;
+    height: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.imageRow{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imageRow img{
+    transition: transform .5s ease;
+}
+
+.imageRow:hover img{
+    transform: scale(1.2);
+}
+
+
+.navigateToMealPage{
+    text-decoration: none;
+    color: black;
+}
+
+.navigateToMealPage:hover{
+    color: #C70039;
+}
+
+td:hover{
+    cursor: pointer;
+}

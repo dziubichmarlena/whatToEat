@@ -8,3 +8,11 @@ mat-tooltip-component .mdc-tooltip__surface {
     width: 300px !important;
     max-width: unset !important;
 }
+
+.mat-mdc-paginator-container{
+    justify-content: center !important;
+}
+
+.mat-mdc-table{
+    text-align: center !important;
+}

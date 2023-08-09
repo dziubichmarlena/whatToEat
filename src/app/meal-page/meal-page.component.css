@@ -1,0 +1,29 @@
+#wrapper{
+    height: 89%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#mealImage{
+    width: 600px;
+    height: 500px;
+}
+
+#meal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recipe{
+    padding-top: 30px;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#instructions{
+    margin-right: 70px;
+}

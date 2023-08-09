@@ -19,7 +19,6 @@ export class LandingPageComponent{
       const dialogRef = this.dialog.open(RandomMealComponent, {
         width: '400px',
         height: '200px',
-        data: {}
       });
   }
 

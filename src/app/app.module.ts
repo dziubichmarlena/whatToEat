@@ -15,6 +15,10 @@ import { CategoriesPageComponent } from './categories-page/categories-page.compo
 import { CategoryMealsComponent } from './category-meals/category-meals.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableModule} from '@angular/material/table';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MealPageComponent } from './meal-page/meal-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     RandomMealComponent,
     CategoriesPageComponent,
     CategoryMealsComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    MealPageComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,10 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     FontAwesomeModule, 
     MatDialogModule,
     MatInputModule, 
-    MatTooltipModule
+    MatTooltipModule, 
+    MatPaginatorModule, 
+    MatTableModule, 
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

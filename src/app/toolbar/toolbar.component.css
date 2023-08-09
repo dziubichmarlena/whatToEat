@@ -23,6 +23,10 @@
     font-weight: bold;
 }
 
-#whiteSalad:hover{
+#salad:hover{
     cursor: pointer;
+}
+
+.randomButton:hover{
+    background-color: #b10032;
 }
