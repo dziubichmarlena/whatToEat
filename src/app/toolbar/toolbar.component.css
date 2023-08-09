@@ -30,3 +30,24 @@
 .randomButton:hover{
     background-color: #b10032;
 }
+
+#heartIcon{
+    color: #C70039;
+}
+
+#heartButton{
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.menuItem{
+    display: flex;
+}
+
+.removeButton{
+    align-self: flex-end;
+}
+
+.navButton:hover{
+    color: #C70039;
+}

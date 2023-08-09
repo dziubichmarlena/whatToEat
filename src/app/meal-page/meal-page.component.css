@@ -11,12 +11,13 @@
 
 #meal{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #recipe{
-    padding-top: 30px;
+    padding-top: 5px;
 }
 
 p{
@@ -26,4 +27,22 @@ p{
 
 #instructions{
     margin-right: 70px;
+    height: 230px;
+    overflow: auto;
+}
+
+ #mapWrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+} 
+
+#favourite{
+    margin-top: 5px;
+    width: 78%;
+    display: flex;
+    justify-content: end;
+}
+
+#favourite:hover{
+    cursor: pointer;
 }

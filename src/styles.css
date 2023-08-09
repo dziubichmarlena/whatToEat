@@ -16,3 +16,11 @@ mat-tooltip-component .mdc-tooltip__surface {
 .mat-mdc-table{
     text-align: center !important;
 }
+
+.mat-mdc-menu-item-text{
+    display: flex;
+}
+
+.mat-mdc-menu-item{
+    display: block !important;
+}

@@ -3,6 +3,19 @@
     <span id="toolbarSpan">What to eat</span>
     <div id="toolbarButton">
         <button mat-button class="randomButton" (click)="openDialog()">Random meal</button>
+        <button mat-icon-button [matMenuTriggerFor]="menu" id="heartButton" (click)="getFavourites()"><fa-icon
+                [icon]="faHeart" id="heartIcon"></fa-icon></button>
+        <mat-menu #menu="matMenu">
+            <div mat-menu-item *ngFor="let fav of favourites" class="menuItem">
+                <button mat-menu-item (click)="navigateToMeal(fav.strCategory, fav.idMeal)"
+                    class="navButton" style="width: 90%;">{{fav.strMeal}}</button>
+                <div style="display: flex; justify-content: flex-end; width: 10%;">
+                    <button mat-icon-button (click)="removeFromFavourites(fav)" class="removeButton"><fa-icon
+                            [icon]="faRemove"></fa-icon></button>
+                </div>
+
+            </div>
+        </mat-menu>
     </div>
 </mat-toolbar>
 <router-outlet></router-outlet>

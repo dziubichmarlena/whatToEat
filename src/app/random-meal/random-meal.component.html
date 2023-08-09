@@ -1,5 +1,5 @@
 <div id="wrapper">
     <p id="kitchenParagraph" *ngIf="mealDBresponse"><b>{{mealDBresponse.meals[0].strMeal}}</b> is selected for you</p>
-    <p id="recipeParagraph">Interested? <a routerLink="/categories/{{mealDBresponse.meals[0].strCategory}}/{{mealDBresponse.meals[0].idMeal}}" id="recipeLink">Get the recipe</a></p>
+    <span id="recipeParagraph">Interested? <p (click)="clicked(mealDBresponse.meals[0].strCategory, mealDBresponse.meals[0].idMeal)" id="recipeLink"p>&nbsp;Get the recipe</span>
     <button mat-button (click)="generateAnother()" id="dialogButton">Generate a different one</button>
 </div>

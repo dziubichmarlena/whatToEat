@@ -1,6 +1,9 @@
 <div id="wrapper" *ngIf="meal">
     <div id="meal">
-      <img src="{{meal.strMealThumb}}" [alt]="meal.idMeal" id="mealImage"/>
+        <img src="{{meal.strMealThumb}}" [alt]="meal.idMeal" id="mealImage" />
+        <div id="favourite" (click)="addToFavourites(meal)">
+                Add to favourites&nbsp;<fa-icon [icon]="faHeart" style="color: #C70039;"></fa-icon>
+        </div>
     </div>
     <div id="recipe">
         <h3 style="margin-bottom: 3px;">{{meal.strMeal}}</h3>
@@ -8,16 +11,21 @@
         <p>Category: &nbsp;{{meal.strCategory | lowercase}}</p>
         <br>
         <p><b>Ingredients and measurements</b></p>
-        <div *ngFor="let im of map | keyvalue">
-            • {{im.key}} ({{im.value}})
+        <div id="mapWrapper">
+            <div *ngFor="let im of map | keyvalue">
+                • {{im.key}} ({{im.value}})
+            </div>
         </div>
+        <br>
         <p><b>Instructions</b></p>
         <div id="instructions">
             {{meal.strInstructions}}
         </div>
         <br>
-        <span *ngFor="let tag of tags">
-            <span>#{{tag| lowercase}}&nbsp;</span>
-        </span>
+        <div id="tags">
+            <span *ngFor="let tag of tags">
+                #{{tag| lowercase}}&nbsp;
+            </span>
+        </div>
     </div>
 </div>

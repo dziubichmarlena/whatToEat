@@ -9,16 +9,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RandomMealComponent } from './random-meal/random-meal.component';
-import { MatDialogModule} from '@angular/material/dialog';
-import {MatInputModule} from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
 import { CategoriesPageComponent } from './categories-page/categories-page.component';
 import { CategoryMealsComponent } from './category-meals/category-meals.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {MatPaginatorModule} from '@angular/material/paginator';
-import {MatTableModule} from '@angular/material/table';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MealPageComponent } from './meal-page/meal-page.component';
+import { MatMenuModule } from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -35,14 +37,16 @@ import { MealPageComponent } from './meal-page/meal-page.component';
     AppRoutingModule,
     MatToolbarModule,
     HttpClientModule,
-    MatButtonModule, 
-    FontAwesomeModule, 
+    MatButtonModule,
+    FontAwesomeModule,
     MatDialogModule,
-    MatInputModule, 
-    MatTooltipModule, 
-    MatPaginatorModule, 
-    MatTableModule, 
-    BrowserAnimationsModule
+    MatInputModule,
+    MatTooltipModule,
+    MatPaginatorModule,
+    MatTableModule,
+    BrowserAnimationsModule,
+    MatMenuModule, 
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
