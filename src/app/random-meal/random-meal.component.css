@@ -17,6 +17,7 @@
 #kitchenParagraph {
     text-align: center;
     margin-bottom: 7px;
+    margin-top: 5px;
 }
 
 #recipeParagraph {
@@ -34,5 +35,16 @@
 
 #recipeLink:hover {
     color: red;
+    cursor: pointer;
+}
+
+#close{
+    margin: 0;
+    text-align: end;
+    margin-top: -20px;
+    margin-bottom:15px;
+}
+
+#close:hover{
     cursor: pointer;
 }

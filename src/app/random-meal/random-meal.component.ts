@@ -29,4 +29,8 @@ export class RandomMealComponent implements OnInit {
       this.router.navigate(['categories', category, mealId]);
     });
   }
+
+  closeDialog(){
+    this.dialog.closeAll();
+  }
 }
