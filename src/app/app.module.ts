@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MealPageComponent } from './meal-page/meal-page.component';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatTableModule,
     BrowserAnimationsModule,
     MatMenuModule, 
-    MatIconModule
+    MatIconModule, 
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

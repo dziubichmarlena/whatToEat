@@ -24,3 +24,7 @@ mat-tooltip-component .mdc-tooltip__surface {
 .mat-mdc-menu-item{
     display: block !important;
 }
+
+.mat-mdc-snack-bar-label .mdc-snackbar__label{
+    text-align: center;
+}
